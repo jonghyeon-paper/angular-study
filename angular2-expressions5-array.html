@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<!-- 배열은 자바스크립트 리터럴타입과 동일 -->
+	<div ng-app="" data-ng-init="fruit=['apple', 'banana', 'strawberry', 'grape']">
+		<p>Result : <span ng-bind="fruit[3]"></span></p>
+		<p>Result : {{fruit[1]}}</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<!-- string은 싱클쿼테이션으로 묶어준다. -->
+	<div ng-app="" data-ng-init="firstName='Jonghyeon'; lastName='Choi'">
+		<p>Result : <span ng-bind="firstName + ' ' + lastName"></span></p>
+		<p>Result : {{firstName + ' ' + lastName}}</p>
+	</div>
+</body>
+</html>

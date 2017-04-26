@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<!-- object는 json형식과 동일 -->
+	<div ng-app="" data-ng-init="name={first : 'Jonghyeon', last : 'Choi'}">
+		<p>Result : <span ng-bind="name.first + ' ' + name.last"></span></p>
+		<p>Result : {{name.first + ' ' + name.last}}</p>
+	</div>
+</body>
+</html>
