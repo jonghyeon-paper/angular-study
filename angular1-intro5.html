@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="ngApp">
+		<p>First Name : <input type="text" ng-model="firstName"></p>
+		<p>Last Name : <input type="text" ng-model="lastName"></p>
+		<p>Full Name : {{firstName + ' ' + lastName}}</p>
+	</div>
+	
+	<script>
+	var app = angular.module('ngApp', []);
+	</script>
+</body>
+</html>
