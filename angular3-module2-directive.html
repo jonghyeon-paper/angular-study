@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<!-- directive(??) 샘플 -->
+<!-- 지시자는 스네이크 표기법으로, 사용시는 낙타표기법으로 호출 -->
+	<div ng-app="ngApp" sample-directive></div>
+	
+	<script>
+	var app = angular.module('ngApp', []);
+	app.directive('sampleDirective', function() {
+		return {
+			template : 'custome directive contents'
+		};
+	});
+	</script>
+</body>
+</html>
