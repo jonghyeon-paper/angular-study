@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<!-- 더블 브레이스와 ng-bind는 동일하다 -->
+<!-- init은 일반적으로 잘 사용하지는 않는다 -->
+	<div ng-app="" ng-init="quantity=1;price=5">
+		<p>Quantity <input type="number" ng-model="quantity"></p>
+		<p>Price    <input type="number" ng-model="price"></p>
+		<p>Total {{quantity * price}}</p>
+	</div>
+</body>
+</html>

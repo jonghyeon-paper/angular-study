@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="ngApp">
+	<p>Element : <sample-directive></sample-directive></p>
+	<p>Attribute : <span sample-directive></span></p>
+	<p>Class : <div class="sample-directive"></div></p>
+	<p>Comment : <!-- directive: sample-directive --></p>
+	</div>
+	
+	<script>
+	var app = angular.module('ngApp', []);
+	app.directive('sampleDirective', function() {
+		return {
+			restrict : 'A',
+			template : 'custome directive contents'
+		};
+	});
+	</script>
+</body>
+</html>
