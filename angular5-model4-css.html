@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<style>
+	input.ng-invalid {background-color: lightblue;}
+	</style>
+</head>
+<body>
+<!-- ng-model : source -->
+<!-- ng_bind : target -->
+	<form ng-app="" name="ngForm">
+		Name:
+		<input type="text" name="name" ng-model="myText" required>
+	</form>
+<!-- The ng-model directive adds/removes the following classes, according to the status of the form field: -->
+<!-- ng-empty -->
+<!-- ng-not-empty -->
+<!-- ng-touched -->
+<!-- ng-untouched -->
+<!-- ng-valid -->
+<!-- ng-invalid -->
+<!-- ng-dirty -->
+<!-- ng-pending -->
+<!-- ng-pristine -->
+</body>
+</html>
