@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="ngApp" ng-controller="ngCtrl">
+		<h1 ng-click="changeName()">{{lastName + ' ' + firstName}}</h1>
+	</div>
+	
+	<script>
+	var app = angular.module('ngApp', []);
+	app.controller('ngCtrl', function($scope) {
+		$scope.firstName = "Jonghyeon";
+		$scope.lastName = "Choi";
+		$scope.changeName = function() {
+			$scope.firstName = "Jongs~";
+		};
+	});
+	</script>
+</body>
+</html>

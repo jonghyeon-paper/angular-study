@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="ngApp" ng-controller="ngCtrl">
+		<p>Last Name <input type="text" ng-model="lastName"></p>
+		<p>First Name <input type="text" ng-model="firstName"></p>
+		<p>Full Name : {{firstName + ' ' + lastName}}</p>
+	</div>
+	
+	<script src="./angular6-databind1-ngApp.js"></script>
+	<script src="./angular6-databind1-ngCtrl.js"></script>
+</body>
+</html>
