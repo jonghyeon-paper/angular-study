@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body >
+	<div ng-app="ngApp" ng-controller="ngCtrl">
+		<p>monry : {{money | currency}}</p>
+	</div>
+	
+	<script>
+	var app = angular.module('ngApp', []);
+	app.controller('ngCtrl', function($scope) {
+		$scope.money = 123456789;
+	});
+	</script>
+</body>
+</html>
